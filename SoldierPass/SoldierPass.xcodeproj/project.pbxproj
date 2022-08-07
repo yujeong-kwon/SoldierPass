@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5331ECFA289E367000AD36BA /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331ECF9289E367000AD36BA /* CategoryButton.swift */; };
+		5331ECFC289E377700AD36BA /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331ECFB289E377700AD36BA /* MainTableViewCell.swift */; };
 		53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2862898E47A00294AED /* BenefitsDataController.swift */; };
 		C7930C4F28980FA000AF4DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C4E28980FA000AF4DFF /* AppDelegate.swift */; };
 		C7930C5128980FA000AF4DFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C5028980FA000AF4DFF /* SceneDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5331ECF9289E367000AD36BA /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		5331ECFB289E377700AD36BA /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		53C2D2862898E47A00294AED /* BenefitsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsDataController.swift; sourceTree = "<group>"; };
 		C7930C4B28980FA000AF4DFF /* SoldierPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoldierPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7930C4E28980FA000AF4DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				C7930C5928980FA200AF4DFF /* LaunchScreen.storyboard */,
 				C7930C5C28980FA200AF4DFF /* Info.plist */,
 				53C2D2862898E47A00294AED /* BenefitsDataController.swift */,
+				5331ECF9289E367000AD36BA /* CategoryButton.swift */,
+				5331ECFB289E377700AD36BA /* MainTableViewCell.swift */,
 			);
 			path = SoldierPass;
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7930C5328980FA000AF4DFF /* ViewController.swift in Sources */,
+				5331ECFA289E367000AD36BA /* CategoryButton.swift in Sources */,
 				53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */,
 				C7930C4F28980FA000AF4DFF /* AppDelegate.swift in Sources */,
+				5331ECFC289E377700AD36BA /* MainTableViewCell.swift in Sources */,
 				C7930C5128980FA000AF4DFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

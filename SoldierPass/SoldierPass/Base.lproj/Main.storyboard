@@ -22,7 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-DS-Bv5" customClass="CategoryButton" customModule="TableView_Picker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-DS-Bv5" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
                                 <rect key="frame" x="154" y="67" width="56" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -33,7 +33,7 @@
                                     <action selector="btnHotelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6W-XW-nsZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-kh-kY6" customClass="CategoryButton" customModule="TableView_Picker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-kh-kY6" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
                                 <rect key="frame" x="228" y="67" width="56" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -44,7 +44,7 @@
                                     <action selector="btnMovieClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6lc-a2-Ipg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-d9-lFM" customClass="CategoryButton" customModule="TableView_Picker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-d9-lFM" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
                                 <rect key="frame" x="302" y="67" width="56" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -55,7 +55,7 @@
                                     <action selector="btnAirplaneClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="id7-Ia-P23"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtO-Qt-zGd" customClass="CategoryButton" customModule="TableView_Picker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtO-Qt-zGd" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
                                 <rect key="frame" x="154" y="104" width="56" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -66,7 +66,7 @@
                                     <action selector="btnRentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6Y-0B-Uj1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-0i-up9" customClass="CategoryButton" customModule="TableView_Picker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-0i-up9" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
                                 <rect key="frame" x="228" y="104" width="56" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -77,7 +77,7 @@
                                     <action selector="btnMoveClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C7j-N1-Yw0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzt-MZ-mT7" customClass="CategoryButton" customModule="TableView_Picker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzt-MZ-mT7" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
                                 <rect key="frame" x="297" y="104" width="67" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>

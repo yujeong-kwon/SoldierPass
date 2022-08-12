@@ -6,16 +6,26 @@
 //
 
 import UIKit
+import CoreLocation
 
-class MapViewController: UIViewController, MTMapViewDelegate {
+class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet var subView: UIView!
     var mapView: MTMapView?
+    
+    var locationManager: CLLocationManager!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fun_mapDisplay()
+        //fun_mapMyLocation()
+        
+        
+    }
+    
+    func fun_mapDisplay(){
         //지도 불러오기
         mapView = MTMapView(frame: self.subView.bounds)
         if let mapView = mapView {
@@ -30,10 +40,16 @@ class MapViewController: UIViewController, MTMapViewDelegate {
             self.view.addSubview(self.subView)
             subView.addSubview(mapView)
         }
-        
-        
     }
     
+    func fun_mapMyLocation(){
+        //현재 위치 가져오기
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        //위치 업데이트
+        locationManager.startUpdatingLocation()
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -44,5 +60,5 @@ class MapViewController: UIViewController, MTMapViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

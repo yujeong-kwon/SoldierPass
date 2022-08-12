@@ -175,18 +175,33 @@
         <!--Item-->
         <scene sceneID="YvF-Dq-VKN">
             <objects>
-                <viewController id="4um-G4-2vU" sceneMemberID="viewController">
+                <viewController id="4um-G4-2vU" customClass="MapViewController" customModule="SoldierPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9E0-PB-Lqu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jH-Nj-GL5">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QoE-xM-zlm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2jH-Nj-GL5" firstAttribute="leading" secondItem="QoE-xM-zlm" secondAttribute="leading" id="5JX-Gp-Wur"/>
+                            <constraint firstItem="2jH-Nj-GL5" firstAttribute="trailing" secondItem="QoE-xM-zlm" secondAttribute="trailing" id="PFC-UA-Rvh"/>
+                            <constraint firstItem="2jH-Nj-GL5" firstAttribute="bottom" secondItem="QoE-xM-zlm" secondAttribute="bottom" id="jl4-xd-GEJ"/>
+                            <constraint firstItem="2jH-Nj-GL5" firstAttribute="top" secondItem="QoE-xM-zlm" secondAttribute="top" id="xer-7e-7cx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="PkH-DT-Moj"/>
+                    <connections>
+                        <outlet property="subView" destination="2jH-Nj-GL5" id="NxS-BX-LN7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPC-ru-Vgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1670" y="176"/>
+            <point key="canvasLocation" x="1669.2307692307693" y="175.59241706161137"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uRL-if-Ws3">

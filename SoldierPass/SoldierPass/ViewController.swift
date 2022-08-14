@@ -26,7 +26,7 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
     
     let notSelectedBtnBgColor = UIColor.lightGray
     let notSelectedBtnTextColor = UIColor.white
-    let selectedBtnBgColor = UIColor.green
+    //let selectedBtnBgColor = UIColor.green
     let selectedBtnTextColor = UIColor.black
     
     var btnState:[Bool] = [false,false,false,false,false,false]
@@ -91,8 +91,8 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
     }
     func fun_btnToggle(btn:UIButton, state:Bool){
         if state == true{
-            btn.tintColor = selectedBtnTextColor
-            btn.backgroundColor = selectedBtnBgColor
+            btn.tintColor = .white
+            btn.backgroundColor = .primary
         }
         else{
             btn.tintColor = notSelectedBtnTextColor
@@ -138,3 +138,7 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
 
 }
 
+extension UIColor{
+    class var darkPrimary:UIColor?{return UIColor(named: "darkPrimary")}
+    class var primary:UIColor?{return UIColor(named: "primary")}
+}

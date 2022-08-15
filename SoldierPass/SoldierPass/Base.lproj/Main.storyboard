@@ -150,6 +150,9 @@
                                         </connections>
                                     </tableView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="J1f-Dz-m3R" firstAttribute="centerX" secondItem="4EF-cb-hqR" secondAttribute="centerX" id="9vS-Cg-4oc"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

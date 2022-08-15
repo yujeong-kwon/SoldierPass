@@ -3,12 +3,14 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoldierPass" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,118 +18,150 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="도시 선택" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90Y-1b-tLU">
-                                <rect key="frame" x="26" y="83" width="87" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-DS-Bv5" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
-                                <rect key="frame" x="154" y="67" width="56" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="# 숙박">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnHotelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6W-XW-nsZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-kh-kY6" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
-                                <rect key="frame" x="228" y="67" width="56" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="# 영화">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnMovieClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6lc-a2-Ipg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-d9-lFM" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
-                                <rect key="frame" x="302" y="67" width="56" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="# 항공">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnAirplaneClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="id7-Ia-P23"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtO-Qt-zGd" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
-                                <rect key="frame" x="154" y="104" width="56" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="# 렌트">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnRentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6Y-0B-Uj1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-0i-up9" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
-                                <rect key="frame" x="228" y="104" width="56" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="# 이사">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnMoveClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C7j-N1-Yw0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzt-MZ-mT7" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
-                                <rect key="frame" x="297" y="104" width="67" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="# 이용권">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnTicketClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8n-Z5-Qby"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J1f-Dz-m3R">
-                                <rect key="frame" x="0.0" y="159" width="390" height="602"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" textLabel="dy4-M0-HIJ" detailTextLabel="OD3-iM-GSu" style="IBUITableViewCellStyleSubtitle" id="Cmy-QO-oma" customClass="MainTableViewCell" customModule="SoldierPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cmy-QO-oma" id="iYI-R0-A6f">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dy4-M0-HIJ">
-                                                    <rect key="frame" x="20" y="7.0000000000000009" width="25" height="14.333333333333334"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yHU-G5-pO5">
+                                <rect key="frame" x="16" y="54" width="358" height="707"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-cb-hqR">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="85.333333333333329"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="도시 선택" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90Y-1b-tLU">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="85.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Uyd-Tu-2Yg">
+                                                <rect key="frame" x="183" y="0.0" width="175" height="85.333333333333329"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sP-ap-XXp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="42.666666666666664"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-DS-Bv5" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="42.666666666666664"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="#숙박">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="btnHotelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6W-XW-nsZ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-kh-kY6" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
+                                                                <rect key="frame" x="58.333333333333314" y="0.0" width="58.333333333333343" height="42.666666666666664"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="#영화">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="btnMovieClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6lc-a2-Ipg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-d9-lFM" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
+                                                                <rect key="frame" x="116.66666666666667" y="0.0" width="58.333333333333329" height="42.666666666666664"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="#항공">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="btnAirplaneClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="id7-Ia-P23"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstItem="lYf-kh-kY6" firstAttribute="centerY" secondItem="RqA-DS-Bv5" secondAttribute="centerY" id="egP-Dd-zDs"/>
+                                                            <constraint firstItem="RqA-DS-Bv5" firstAttribute="width" secondItem="lYf-kh-kY6" secondAttribute="width" id="m6d-Mx-KSA"/>
+                                                            <constraint firstItem="RqA-DS-Bv5" firstAttribute="width" secondItem="KFS-d9-lFM" secondAttribute="width" id="xc9-RW-mQL"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-fz-RuO">
+                                                        <rect key="frame" x="0.0" y="42.666666666666671" width="175" height="42.666666666666671"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtO-Qt-zGd" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="42.666666666666664"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="#렌트">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="btnRentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6Y-0B-Uj1"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-0i-up9" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
+                                                                <rect key="frame" x="58.333333333333314" y="0.0" width="58.333333333333343" height="42.666666666666664"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="#이사">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="btnMoveClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C7j-N1-Yw0"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzt-MZ-mT7" customClass="CategoryButton" customModule="SoldierPass" customModuleProvider="target">
+                                                                <rect key="frame" x="116.66666666666667" y="0.0" width="58.333333333333329" height="42.666666666666664"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="#이용권">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="btnTicketClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8n-Z5-Qby"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="9sP-ap-XXp" firstAttribute="height" secondItem="J5s-fz-RuO" secondAttribute="height" id="FUd-KT-SiZ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J1f-Dz-m3R">
+                                        <rect key="frame" x="0.0" y="85.333333333333314" width="358" height="621.66666666666674"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" textLabel="dy4-M0-HIJ" detailTextLabel="OD3-iM-GSu" style="IBUITableViewCellStyleSubtitle" id="Cmy-QO-oma" customClass="MainTableViewCell" customModule="SoldierPass" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.666666030883789" width="358" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cmy-QO-oma" id="iYI-R0-A6f">
+                                                    <rect key="frame" x="0.0" y="0.0" width="358" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OD3-iM-GSu">
-                                                    <rect key="frame" x="19.999999999999996" y="23.333333333333336" width="40.666666666666664" height="13.333333333333334"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hKT-6S-oWX"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hPa-0X-ueR"/>
-                                </connections>
-                            </tableView>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dy4-M0-HIJ">
+                                                            <rect key="frame" x="20" y="7.0000000000000009" width="25" height="14.333333333333334"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OD3-iM-GSu">
+                                                            <rect key="frame" x="19.999999999999996" y="23.333333333333336" width="40.666666666666664" height="13.333333333333334"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="hKT-6S-oWX"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="hPa-0X-ueR"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHU-G5-pO5" secondAttribute="trailing" constant="16" id="jmd-eX-fQp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yHU-G5-pO5" secondAttribute="bottom" id="nj2-GH-1fY"/>
+                            <constraint firstItem="yHU-G5-pO5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qXy-aY-mh0"/>
+                            <constraint firstItem="yHU-G5-pO5" firstAttribute="topMargin" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="rOL-vg-0mv"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="yxu-2L-Snv"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house.fill" catalog="system" selectedImage="house.fill" id="yxu-2L-Snv"/>
                     <connections>
                         <outlet property="btnAirplane" destination="KFS-d9-lFM" id="aOf-hI-6O0"/>
                         <outlet property="btnHotel" destination="RqA-DS-Bv5" id="rbr-H0-nM3"/>
@@ -143,7 +177,7 @@
             </objects>
             <point key="canvasLocation" x="1016.9230769230769" y="-171.32701421800948"/>
         </scene>
-        <!--Table View Controller-->
+        <!--즐겨찾기-->
         <scene sceneID="GXC-4M-zqu">
             <objects>
                 <tableViewController id="GBD-vz-1wS" sceneMemberID="viewController">
@@ -166,13 +200,13 @@
                             <outlet property="delegate" destination="GBD-vz-1wS" id="nKL-uj-PRL"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="W13-v7-KYu"/>
+                    <tabBarItem key="tabBarItem" title="즐겨찾기" image="star.fill" catalog="system" selectedImage="star.fill" id="W13-v7-KYu"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwt-0A-IRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="578"/>
         </scene>
-        <!--Item-->
+        <!--내 주변-->
         <scene sceneID="YvF-Dq-VKN">
             <objects>
                 <viewController id="4um-G4-2vU" customClass="MapViewController" customModule="SoldierPass" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,7 +228,7 @@
                             <constraint firstItem="2jH-Nj-GL5" firstAttribute="top" secondItem="QoE-xM-zlm" secondAttribute="top" id="xer-7e-7cx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PkH-DT-Moj"/>
+                    <tabBarItem key="tabBarItem" title="내 주변" image="map.fill" catalog="system" selectedImage="map.fill" id="PkH-DT-Moj"/>
                     <connections>
                         <outlet property="subView" destination="2jH-Nj-GL5" id="NxS-BX-LN7"/>
                     </connections>
@@ -203,15 +237,17 @@
             </objects>
             <point key="canvasLocation" x="1669.2307692307693" y="175.59241706161137"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="uRL-if-Ws3">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fsr-fp-9NZ" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fsr-fp-9NZ" customClass="TabViewController" customModule="SoldierPass" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qsG-Mr-L8S">
+                    <tabBar key="tabBar" alpha="0.80000000000000004" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qsG-Mr-L8S">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="primary"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="E7U-Kq-oC5"/>
@@ -225,6 +261,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="primary">
+            <color red="0.53725490196078429" green="0.60392156862745094" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

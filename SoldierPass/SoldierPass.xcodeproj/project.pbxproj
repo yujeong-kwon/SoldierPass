@@ -53,6 +53,16 @@
 		C7B4643B28A6BA4700AB6813 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B4634128A6AF5200AB6813 /* libc++.tbd */; };
 		C7B4643C28A6BA5000AB6813 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B4634028A6AF4100AB6813 /* libxml2.tbd */; };
 		C7B4643D28A6BA5A00AB6813 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B4633F28A6AF3200AB6813 /* libsqlite3.tbd */; };
+		C7EA888028A96CDD00D850F3 /* icons8-별-50 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887728A96CDD00D850F3 /* icons8-별-50 (1).png */; };
+		C7EA888128A96CDD00D850F3 /* icons8-지도-마커-50 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887828A96CDD00D850F3 /* icons8-지도-마커-50 (1).png */; };
+		C7EA888228A96CDD00D850F3 /* icons8-집-50 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887928A96CDD00D850F3 /* icons8-집-50 (1).png */; };
+		C7EA888328A96CDD00D850F3 /* icons8-집-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887A28A96CDD00D850F3 /* icons8-집-50.png */; };
+		C7EA888428A96CDD00D850F3 /* icons8-지도-마커-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887B28A96CDD00D850F3 /* icons8-지도-마커-50.png */; };
+		C7EA888528A96CDD00D850F3 /* icons8-별-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887C28A96CDD00D850F3 /* icons8-별-50.png */; };
+		C7EA888628A96CDD00D850F3 /* icons8-별-50 (4).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887D28A96CDD00D850F3 /* icons8-별-50 (4).png */; };
+		C7EA888728A96CDD00D850F3 /* icons8-별-50 (3).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887E28A96CDD00D850F3 /* icons8-별-50 (3).png */; };
+		C7EA888828A96CDD00D850F3 /* icons8-별-50 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887F28A96CDD00D850F3 /* icons8-별-50 (2).png */; };
+		C7EA888C28A97F6600D850F3 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA888B28A97F6600D850F3 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +123,16 @@
 		C7B4641C28A6B95C00AB6813 /* daum_th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_th_line.png; sourceTree = "<group>"; };
 		C7B4641D28A6B95C00AB6813 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		C7B4641E28A6B95C00AB6813 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		C7EA887728A96CDD00D850F3 /* icons8-별-50 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50 (1).png"; sourceTree = "<group>"; };
+		C7EA887828A96CDD00D850F3 /* icons8-지도-마커-50 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-지도-마커-50 (1).png"; sourceTree = "<group>"; };
+		C7EA887928A96CDD00D850F3 /* icons8-집-50 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-집-50 (1).png"; sourceTree = "<group>"; };
+		C7EA887A28A96CDD00D850F3 /* icons8-집-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-집-50.png"; sourceTree = "<group>"; };
+		C7EA887B28A96CDD00D850F3 /* icons8-지도-마커-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-지도-마커-50.png"; sourceTree = "<group>"; };
+		C7EA887C28A96CDD00D850F3 /* icons8-별-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50.png"; sourceTree = "<group>"; };
+		C7EA887D28A96CDD00D850F3 /* icons8-별-50 (4).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50 (4).png"; sourceTree = "<group>"; };
+		C7EA887E28A96CDD00D850F3 /* icons8-별-50 (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50 (3).png"; sourceTree = "<group>"; };
+		C7EA887F28A96CDD00D850F3 /* icons8-별-50 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50 (2).png"; sourceTree = "<group>"; };
+		C7EA888B28A97F6600D850F3 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,11 +175,13 @@
 		C7930C4D28980FA000AF4DFF /* SoldierPass */ = {
 			isa = PBXGroup;
 			children = (
+				C7EA887628A96CDD00D850F3 /* icons8 */,
 				C7930C622898103900AF4DFF /* data.csv */,
 				C7930C4E28980FA000AF4DFF /* AppDelegate.swift */,
 				C7930C5028980FA000AF4DFF /* SceneDelegate.swift */,
 				C7930C5228980FA000AF4DFF /* ViewController.swift */,
 				C7930C5428980FA000AF4DFF /* Main.storyboard */,
+				C7EA888B28A97F6600D850F3 /* TabViewController.swift */,
 				C7B4625428A6ABD900AB6813 /* MapViewController.swift */,
 				C7930C5728980FA200AF4DFF /* Assets.xcassets */,
 				C7930C5928980FA200AF4DFF /* LaunchScreen.storyboard */,
@@ -246,6 +268,22 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		C7EA887628A96CDD00D850F3 /* icons8 */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA887728A96CDD00D850F3 /* icons8-별-50 (1).png */,
+				C7EA887828A96CDD00D850F3 /* icons8-지도-마커-50 (1).png */,
+				C7EA887928A96CDD00D850F3 /* icons8-집-50 (1).png */,
+				C7EA887A28A96CDD00D850F3 /* icons8-집-50.png */,
+				C7EA887B28A96CDD00D850F3 /* icons8-지도-마커-50.png */,
+				C7EA887C28A96CDD00D850F3 /* icons8-별-50.png */,
+				C7EA887D28A96CDD00D850F3 /* icons8-별-50 (4).png */,
+				C7EA887E28A96CDD00D850F3 /* icons8-별-50 (3).png */,
+				C7EA887F28A96CDD00D850F3 /* icons8-별-50 (2).png */,
+			);
+			path = icons8;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,18 +342,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EA888328A96CDD00D850F3 /* icons8-집-50.png in Resources */,
 				C7B4642128A6B95C00AB6813 /* shadow_balloon.png in Resources */,
+				C7EA888428A96CDD00D850F3 /* icons8-지도-마커-50.png in Resources */,
 				C7B4642C28A6B95C00AB6813 /* map_present_tracking.png in Resources */,
 				C7B4642E28A6B95C00AB6813 /* info_box.png in Resources */,
 				C7B4642928A6B95C00AB6813 /* map_pin_red@3x.png in Resources */,
 				C7B4642028A6B95C00AB6813 /* map_pin_custom.png in Resources */,
 				C7B4642828A6B95C00AB6813 /* th_line.png in Resources */,
+				C7EA888128A96CDD00D850F3 /* icons8-지도-마커-50 (1).png in Resources */,
 				C7B4642528A6B95C00AB6813 /* map_pinup@3x.png in Resources */,
 				C7B4642328A6B95C00AB6813 /* detail_button.png in Resources */,
+				C7EA888528A96CDD00D850F3 /* icons8-별-50.png in Resources */,
 				C7B4643628A6B95C00AB6813 /* noimage.png in Resources */,
 				C7B4643928A6B95C00AB6813 /* map_pin_shadow.png in Resources */,
 				C7B4643328A6B95C00AB6813 /* map_present_direction.png in Resources */,
 				C7B4643028A6B95C00AB6813 /* map_pinup_custom.png in Resources */,
+				C7EA888628A96CDD00D850F3 /* icons8-별-50 (4).png in Resources */,
 				C7930C632898103900AF4DFF /* data.csv in Resources */,
 				C7B4643228A6B95C00AB6813 /* noimage256.png in Resources */,
 				C7B4643428A6B95C00AB6813 /* map_pin.png in Resources */,
@@ -331,10 +374,14 @@
 				C7930C5628980FA000AF4DFF /* Main.storyboard in Resources */,
 				C7B4642A28A6B95C00AB6813 /* daum_copyright.png in Resources */,
 				C7B4643128A6B95C00AB6813 /* info_box_tail.png in Resources */,
+				C7EA888828A96CDD00D850F3 /* icons8-별-50 (2).png in Resources */,
 				C7B4642728A6B95C00AB6813 /* copyright.png in Resources */,
 				C7B4643528A6B95C00AB6813 /* map_present.png in Resources */,
 				C7B4643828A6B95C00AB6813 /* daum_th_line.png in Resources */,
+				C7EA888728A96CDD00D850F3 /* icons8-별-50 (3).png in Resources */,
 				C7B4642428A6B95C00AB6813 /* map_pin_custom@3x.png in Resources */,
+				C7EA888228A96CDD00D850F3 /* icons8-집-50 (1).png in Resources */,
+				C7EA888028A96CDD00D850F3 /* icons8-별-50 (1).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EA888C28A97F6600D850F3 /* TabViewController.swift in Sources */,
 				C7930C5328980FA000AF4DFF /* ViewController.swift in Sources */,
 				5331ECFA289E367000AD36BA /* CategoryButton.swift in Sources */,
 				53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */,

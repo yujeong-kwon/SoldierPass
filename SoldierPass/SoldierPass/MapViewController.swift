@@ -15,13 +15,18 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
     
     var locationManager: CLLocationManager!
     
+    var dataController:BenefitsDataController = BenefitsDataController()
+    var data:[[String]]=[]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fun_mapDisplay()
         //fun_mapMyLocation()
-        
+        data = dataController.fun_getDataList()
+        for item in data{
+            fun_adressToPoint(address: item[10], name: item[2])
+        }
         
     }
     
@@ -42,6 +47,40 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
         }
     }
     
+    func fun_adressToPoint(address: String, name: String){
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(address){ [self](placemark, error)in
+            guard error == nil else {return print(error!.localizedDescription)}//에러코드가 없으면 아래코드 실행
+            guard let location = placemark?.first?.location else {
+                return print("데이터가 없습니다")
+            }
+            self.fun_createPin(itemName: name, getla: location.coordinate.latitude, getlo: location.coordinate.longitude, markerType: .redPin)
+        }
+    }
+    
+    func fun_createPin(itemName:String, getla: Double, getlo: Double, markerType:MTMapPOIItemMarkerType){
+        let poiItem = MTMapPOIItem()
+        poiItem.itemName = "\(itemName)"
+        poiItem.mapPoint = MTMapPoint(geoCoord: MTMapPointGeo(latitude: getla, longitude: getlo))
+        poiItem.markerType = markerType
+        
+        mapView?.addPOIItems([poiItem])
+       
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //mapView의 모든 poiItem 제거
+        for item in mapView!.poiItems{
+            mapView!.remove(item as! MTMapPOIItem)
+        }
+    }
+    
+    func mapView(_ mapView: MTMapView!, touchedCalloutBalloonOf poiItem: MTMapPOIItem!) {
+        //itemNAME으로 데이터에서 조회
+        //-> 조회하고 팝업창 상세페이지
+    }
+
+    /*
     func fun_mapMyLocation(){
         //현재 위치 가져오기
         locationManager = CLLocationManager()
@@ -50,7 +89,7 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
         locationManager.startUpdatingLocation()
         
     }
-
+*/
     /*
     // MARK: - Navigation
 

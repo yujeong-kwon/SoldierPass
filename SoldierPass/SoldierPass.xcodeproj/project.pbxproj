@@ -13,6 +13,7 @@
 		53BF8A8A28AB989D0039D9AF /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = 53BF8A8928AB989D0039D9AF /* DaumMap.embeddedframework */; };
 		53BF8A8C28AB98F10039D9AF /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BF8A8B28AB98F10039D9AF /* DaumMap.framework */; };
 		53BF8A8F28ABC3C30039D9AF /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8A8E28ABC3C30039D9AF /* DBHelper.swift */; };
+		53BF8A9128ABD0080039D9AF /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8A9028ABD0080039D9AF /* PopupViewController.swift */; };
 		53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2862898E47A00294AED /* BenefitsDataController.swift */; };
 		C7930C4F28980FA000AF4DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C4E28980FA000AF4DFF /* AppDelegate.swift */; };
 		C7930C5128980FA000AF4DFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C5028980FA000AF4DFF /* SceneDelegate.swift */; };
@@ -36,8 +37,8 @@
 		C7EA888428A96CDD00D850F3 /* icons8-지도-마커-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887B28A96CDD00D850F3 /* icons8-지도-마커-50.png */; };
 		C7EA888528A96CDD00D850F3 /* icons8-별-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887C28A96CDD00D850F3 /* icons8-별-50.png */; };
 		C7EA888628A96CDD00D850F3 /* icons8-별-50 (4).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887D28A96CDD00D850F3 /* icons8-별-50 (4).png */; };
-		C7EA888728A96CDD00D850F3 /* icons8-별-50 (3).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887E28A96CDD00D850F3 /* icons8-별-50 (3).png */; };
-		C7EA888828A96CDD00D850F3 /* icons8-별-50 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887F28A96CDD00D850F3 /* icons8-별-50 (2).png */; };
+		C7EA888728A96CDD00D850F3 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887E28A96CDD00D850F3 /* star.png */; };
+		C7EA888828A96CDD00D850F3 /* full_star.png in Resources */ = {isa = PBXBuildFile; fileRef = C7EA887F28A96CDD00D850F3 /* full_star.png */; };
 		C7EA888C28A97F6600D850F3 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA888B28A97F6600D850F3 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		53BF8A8928AB989D0039D9AF /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
 		53BF8A8B28AB98F10039D9AF /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = SoldierPass/DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
 		53BF8A8E28ABC3C30039D9AF /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		53BF8A9028ABD0080039D9AF /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		53C2D2862898E47A00294AED /* BenefitsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsDataController.swift; sourceTree = "<group>"; };
 		C7930C4B28980FA000AF4DFF /* SoldierPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoldierPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7930C4E28980FA000AF4DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,8 +76,8 @@
 		C7EA887B28A96CDD00D850F3 /* icons8-지도-마커-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-지도-마커-50.png"; sourceTree = "<group>"; };
 		C7EA887C28A96CDD00D850F3 /* icons8-별-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50.png"; sourceTree = "<group>"; };
 		C7EA887D28A96CDD00D850F3 /* icons8-별-50 (4).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50 (4).png"; sourceTree = "<group>"; };
-		C7EA887E28A96CDD00D850F3 /* icons8-별-50 (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50 (3).png"; sourceTree = "<group>"; };
-		C7EA887F28A96CDD00D850F3 /* icons8-별-50 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-별-50 (2).png"; sourceTree = "<group>"; };
+		C7EA887E28A96CDD00D850F3 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		C7EA887F28A96CDD00D850F3 /* full_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_star.png; sourceTree = "<group>"; };
 		C7EA888B28A97F6600D850F3 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				5331ECF9289E367000AD36BA /* CategoryButton.swift */,
 				5331ECFB289E377700AD36BA /* MainTableViewCell.swift */,
 				53BF8A8E28ABC3C30039D9AF /* DBHelper.swift */,
+				53BF8A9028ABD0080039D9AF /* PopupViewController.swift */,
 			);
 			path = SoldierPass;
 			sourceTree = "<group>";
@@ -166,8 +169,8 @@
 				C7EA887B28A96CDD00D850F3 /* icons8-지도-마커-50.png */,
 				C7EA887C28A96CDD00D850F3 /* icons8-별-50.png */,
 				C7EA887D28A96CDD00D850F3 /* icons8-별-50 (4).png */,
-				C7EA887E28A96CDD00D850F3 /* icons8-별-50 (3).png */,
-				C7EA887F28A96CDD00D850F3 /* icons8-별-50 (2).png */,
+				C7EA887E28A96CDD00D850F3 /* star.png */,
+				C7EA887F28A96CDD00D850F3 /* full_star.png */,
 			);
 			path = icons8;
 			sourceTree = "<group>";
@@ -240,8 +243,8 @@
 				C7930C5B28980FA200AF4DFF /* LaunchScreen.storyboard in Resources */,
 				C7930C5828980FA200AF4DFF /* Assets.xcassets in Resources */,
 				C7930C5628980FA000AF4DFF /* Main.storyboard in Resources */,
-				C7EA888828A96CDD00D850F3 /* icons8-별-50 (2).png in Resources */,
-				C7EA888728A96CDD00D850F3 /* icons8-별-50 (3).png in Resources */,
+				C7EA888828A96CDD00D850F3 /* full_star.png in Resources */,
+				C7EA888728A96CDD00D850F3 /* star.png in Resources */,
 				C7EA888228A96CDD00D850F3 /* icons8-집-50 (1).png in Resources */,
 				C7EA888028A96CDD00D850F3 /* icons8-별-50 (1).png in Resources */,
 			);
@@ -259,6 +262,7 @@
 				5331ECFA289E367000AD36BA /* CategoryButton.swift in Sources */,
 				53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */,
 				53BF8A8F28ABC3C30039D9AF /* DBHelper.swift in Sources */,
+				53BF8A9128ABD0080039D9AF /* PopupViewController.swift in Sources */,
 				C7930C4F28980FA000AF4DFF /* AppDelegate.swift in Sources */,
 				5331ECFC289E377700AD36BA /* MainTableViewCell.swift in Sources */,
 				C7930C5128980FA000AF4DFF /* SceneDelegate.swift in Sources */,

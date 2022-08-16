@@ -7,11 +7,11 @@
 
 import Foundation
 
+var dataList:[[String]]=[]
+
 class BenefitsDataController{
-    private var dataList:[[String]]
     
     init(){
-        dataList = []
         fun_loadDataFromCSV()
     }
     func fun_isEmpty()->Bool{
@@ -21,9 +21,6 @@ class BenefitsDataController{
         else{
             return false
         }
-    }
-    func fun_getDataList()->[[String]]{
-        return dataList
     }
     func fun_loadDataFromCSV(){
         let path = Bundle.main.path(forResource: "data", ofType: "csv")!;
@@ -38,7 +35,17 @@ class BenefitsDataController{
                     if index == 0{
                         continue
                     }
-                    dataList.append(item)
+                    var data:[String] = []
+                    data.append(String(index-1))
+                    data.append(item[2])
+                    data.append(item[1])
+                    data.append(item[9])
+                    data.append(item[8])
+                    data.append(item[6])
+                    data.append(item[7])
+                    data.append(item[10])
+                    
+                    dataList.append(data)
                 }
             }
         }catch{

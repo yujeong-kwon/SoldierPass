@@ -23,7 +23,7 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
         
         fun_mapDisplay()
         //fun_mapMyLocation()
-        data = dataController.fun_getDataList()
+        data = dataList
         for item in data{
             fun_adressToPoint(address: item[10], name: item[2])
         }

@@ -11,18 +11,42 @@ class PopupViewController: UIViewController {
 
     @IBOutlet var btnStar: UIButton!
     @IBOutlet var lbTitle: UILabel!
+    @IBOutlet var lbContents: UILabel!
+    @IBOutlet var phoneIcon: UILabel!
+    @IBOutlet var lbCallNumber: UILabel!
+    @IBOutlet var addressIcon: UILabel!
+    @IBOutlet var lbAddress: UILabel!
+    
     
     var index:Int?
     var db = DBHelper.shared
     var favoriteList:Array<Int>=[]
     
+    //인덱스, 시설명, 지역, 카테고리, 상세설명, 연락처, 홈페이지, 상세주소, 즐찾여부
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.lbContents.numberOfLines = 0
+        
         favoriteList = db.fun_selectAll()
         // Do any additional setup after loading the view.
         fun_setbtnStar(state: favoriteList.contains(index!))
         lbTitle.text = dataList[index!][1]
-        print(index!)
+        //상세 설명
+        lbContents.text = dataList[index!][4]
+        lbContents.sizeToFit()
+        //전화번호
+        let attachment_phone = NSTextAttachment()
+        attachment_phone.image = UIImage(named: "icons8-전화-30.png")
+        let attachmentString_phone = NSAttributedString(attachment: attachment_phone)
+        phoneIcon.attributedText = attachmentString_phone
+        lbCallNumber.text = dataList[index!][5]
+        //주소
+        let attachment_address = NSTextAttachment()
+        attachment_address.image = UIImage(named: "icons8-채점자-30.png")
+        let attachmentString_address = NSAttributedString(attachment: attachment_address)
+        addressIcon.attributedText = attachmentString_address
+        lbAddress.text = dataList[index!][7]
+        
     }
     @IBAction func btnExit(_ sender: UIButton) {
         self.dismiss(animated: false, completion: nil)
@@ -44,6 +68,10 @@ class PopupViewController: UIViewController {
         favoriteList = db.fun_selectAll()
         print(favoriteList)
         fun_setbtnStar(state: favoriteList.contains(index!))
+    }
+    @IBAction func btnConnectPage(_ sender: HomepageButton) {
+        let homepageURL = URL(string: dataList[index!][6])
+        UIApplication.shared.open(homepageURL!, options: [:])
     }
     func fun_setbtnStar(state:Bool){
         if state == false{

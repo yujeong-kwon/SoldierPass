@@ -14,6 +14,9 @@
 		53BF8A8C28AB98F10039D9AF /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BF8A8B28AB98F10039D9AF /* DaumMap.framework */; };
 		53BF8A8F28ABC3C30039D9AF /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8A8E28ABC3C30039D9AF /* DBHelper.swift */; };
 		53BF8A9128ABD0080039D9AF /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8A9028ABD0080039D9AF /* PopupViewController.swift */; };
+		53BF8A9328ABDD800039D9AF /* HomepageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8A9228ABDD800039D9AF /* HomepageButton.swift */; };
+		53BF8A9528ABE0C70039D9AF /* icons8-전화-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 53BF8A9428ABE0C70039D9AF /* icons8-전화-30.png */; };
+		53BF8A9728ABE3B70039D9AF /* icons8-채점자-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 53BF8A9628ABE3B70039D9AF /* icons8-채점자-30.png */; };
 		53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2862898E47A00294AED /* BenefitsDataController.swift */; };
 		C7930C4F28980FA000AF4DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C4E28980FA000AF4DFF /* AppDelegate.swift */; };
 		C7930C5128980FA000AF4DFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C5028980FA000AF4DFF /* SceneDelegate.swift */; };
@@ -50,6 +53,9 @@
 		53BF8A8B28AB98F10039D9AF /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = SoldierPass/DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
 		53BF8A8E28ABC3C30039D9AF /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		53BF8A9028ABD0080039D9AF /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		53BF8A9228ABDD800039D9AF /* HomepageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageButton.swift; sourceTree = "<group>"; };
+		53BF8A9428ABE0C70039D9AF /* icons8-전화-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-전화-30.png"; sourceTree = "<group>"; };
+		53BF8A9628ABE3B70039D9AF /* icons8-채점자-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-채점자-30.png"; sourceTree = "<group>"; };
 		53C2D2862898E47A00294AED /* BenefitsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsDataController.swift; sourceTree = "<group>"; };
 		C7930C4B28980FA000AF4DFF /* SoldierPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoldierPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7930C4E28980FA000AF4DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 				5331ECFB289E377700AD36BA /* MainTableViewCell.swift */,
 				53BF8A8E28ABC3C30039D9AF /* DBHelper.swift */,
 				53BF8A9028ABD0080039D9AF /* PopupViewController.swift */,
+				53BF8A9228ABDD800039D9AF /* HomepageButton.swift */,
 			);
 			path = SoldierPass;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 		C7EA887628A96CDD00D850F3 /* icons8 */ = {
 			isa = PBXGroup;
 			children = (
+				53BF8A9628ABE3B70039D9AF /* icons8-채점자-30.png */,
 				C7EA887728A96CDD00D850F3 /* icons8-별-50 (1).png */,
 				C7EA887828A96CDD00D850F3 /* icons8-지도-마커-50 (1).png */,
 				C7EA887928A96CDD00D850F3 /* icons8-집-50 (1).png */,
@@ -171,6 +179,7 @@
 				C7EA887D28A96CDD00D850F3 /* icons8-별-50 (4).png */,
 				C7EA887E28A96CDD00D850F3 /* star.png */,
 				C7EA887F28A96CDD00D850F3 /* full_star.png */,
+				53BF8A9428ABE0C70039D9AF /* icons8-전화-30.png */,
 			);
 			path = icons8;
 			sourceTree = "<group>";
@@ -247,6 +256,8 @@
 				C7EA888728A96CDD00D850F3 /* star.png in Resources */,
 				C7EA888228A96CDD00D850F3 /* icons8-집-50 (1).png in Resources */,
 				C7EA888028A96CDD00D850F3 /* icons8-별-50 (1).png in Resources */,
+				53BF8A9728ABE3B70039D9AF /* icons8-채점자-30.png in Resources */,
+				53BF8A9528ABE0C70039D9AF /* icons8-전화-30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +271,7 @@
 				C7EA888C28A97F6600D850F3 /* TabViewController.swift in Sources */,
 				C7930C5328980FA000AF4DFF /* ViewController.swift in Sources */,
 				5331ECFA289E367000AD36BA /* CategoryButton.swift in Sources */,
+				53BF8A9328ABDD800039D9AF /* HomepageButton.swift in Sources */,
 				53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */,
 				53BF8A8F28ABC3C30039D9AF /* DBHelper.swift in Sources */,
 				53BF8A9128ABD0080039D9AF /* PopupViewController.swift in Sources */,

@@ -20,7 +20,6 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
     @IBOutlet var btnTicket: CategoryButton!
     
     var dataController:BenefitsDataController = BenefitsDataController()
-    var data:[[String]]=[]
     var cityList:[String]=["전국","서울","인천","대전","광주","대구","울산","부산","경기","강원","충북","충남","전북","전남","경북","경남","제주"]
     var selectCity = "전국"
     
@@ -30,11 +29,12 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
     let selectedBtnTextColor = UIColor.black
     
     var btnState:[Bool] = [false,false,false,false,false,false]
-    
+    var data:[[String]] = []
+    let db = DBHelper.shared
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        data = dataController.fun_getDataList()
+        data = dataList
         showPicker.tintColor = .clear
         createPickerView()
         dismissPickerView()
@@ -50,10 +50,19 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
-        cell.textLabel?.text = data[indexPath.row][2]
-        cell.detailTextLabel?.text = data[indexPath.row][8]
+        cell.textLabel?.text = data[indexPath.row][1]
+        cell.detailTextLabel?.text = data[indexPath.row][4]
         
         return cell
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mySegue"{
+            if let vc = segue.destination as? PopupViewController{
+                if let index = self.tableView.indexPathForSelectedRow?.row{
+                    vc.index = Int(data[index][0])
+                }
+            }
+        }
     }
     //PickerView
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

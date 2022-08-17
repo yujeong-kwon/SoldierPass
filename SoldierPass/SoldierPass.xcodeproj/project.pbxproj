@@ -426,7 +426,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6MUPBPQFU7;
+				DEVELOPMENT_TEAM = 977J65FA28;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SoldierPass/mapTest/mapTest/DaumMap.embeddedframework",
@@ -465,7 +465,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6MUPBPQFU7;
+				DEVELOPMENT_TEAM = 977J65FA28;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SoldierPass/mapTest/mapTest/DaumMap.embeddedframework",

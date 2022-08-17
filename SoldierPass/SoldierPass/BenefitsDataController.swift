@@ -71,42 +71,42 @@ class BenefitsDataController{
         
         if category[0] == true {
             for item in data{
-                if item[9] == "숙박" {
+                if item[3] == "숙박" {
                     data2.append(item)
                 }
             }
         }
         if category[1] == true {
             for item in data{
-                if item[9] == "영화" {
+                if item[3] == "영화" {
                     data2.append(item)
                 }
             }
         }
         if category[2] == true {
             for item in data{
-                if item[9] == "항공" {
+                if item[3] == "항공" {
                     data2.append(item)
                 }
             }
         }
         if category[3] == true {
             for item in data{
-                if item[9] == "렌트" {
+                if item[3] == "렌트" {
                     data2.append(item)
                 }
             }
         }
         if category[4] == true {
             for item in data{
-                if item[9] == "이사" {
+                if item[3] == "이사" {
                     data2.append(item)
                 }
             }
         }
         if category[5] == true {
             for item in data{
-                if item[9] == "이용권" {
+                if item[3] == "이용권" {
                     data2.append(item)
                 }
             }

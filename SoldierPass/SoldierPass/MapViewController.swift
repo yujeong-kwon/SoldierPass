@@ -20,12 +20,11 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fun_mapDisplay()
         //fun_mapMyLocation()
         data = dataList
         for item in data{
-            fun_adressToPoint(address: item[10], name: item[2])
+           fun_adressToPoint(address: item[7], name: item[1])
         }
         
     }
@@ -54,11 +53,18 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
             guard let location = placemark?.first?.location else {
                 return print("데이터가 없습니다")
             }
+            print(location.coordinate.latitude)
+           
+            
             self.fun_createPin(itemName: name, getla: location.coordinate.latitude, getlo: location.coordinate.longitude, markerType: .redPin)
+            
         }
+       
+       
     }
     
     func fun_createPin(itemName:String, getla: Double, getlo: Double, markerType:MTMapPOIItemMarkerType){
+        
         let poiItem = MTMapPOIItem()
         poiItem.itemName = "\(itemName)"
         poiItem.mapPoint = MTMapPoint(geoCoord: MTMapPointGeo(latitude: getla, longitude: getlo))
@@ -67,13 +73,15 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
         mapView?.addPOIItems([poiItem])
        
     }
-    
+    /*
     override func viewWillDisappear(_ animated: Bool) {
         //mapView의 모든 poiItem 제거
         for item in mapView!.poiItems{
             mapView!.remove(item as! MTMapPOIItem)
         }
     }
+    */
+    
     
     func mapView(_ mapView: MTMapView!, touchedCalloutBalloonOf poiItem: MTMapPOIItem!) {
         //itemNAME으로 데이터에서 조회

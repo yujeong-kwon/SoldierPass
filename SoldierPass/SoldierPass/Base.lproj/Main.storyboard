@@ -333,6 +333,7 @@
                                 <connections>
                                     <outlet property="lbFavoriteSubTitleText" destination="O2D-iE-lKT" id="lgk-qp-4uO"/>
                                     <outlet property="lbFavoriteTitleText" destination="vxe-9M-tJE" id="88e-Yb-Mt0"/>
+                                    <segue destination="6fv-HM-w9P" kind="show" identifier="favoriteSegue" id="9bo-UQ-IKn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -376,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPC-ru-Vgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669.2307692307693" y="175.59241706161137"/>
+            <point key="canvasLocation" x="1945" y="112"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="uRL-if-Ws3">
@@ -401,6 +402,9 @@
             <point key="canvasLocation" x="29.23076923076923" y="69.66824644549763"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9bo-UQ-IKn"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="cell_background.jpeg" width="1440" height="960"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>

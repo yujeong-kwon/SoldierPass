@@ -43,6 +43,16 @@ class FavoriteTableViewController: UITableViewController {
 
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "favoriteSegue"{
+            if let vc = segue.destination as? PopupViewController{
+                if let index = self.tableView.indexPathForSelectedRow?.row{
+                    print(indexList[index])
+                    vc.index = indexList[index]
+                }
+            }
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

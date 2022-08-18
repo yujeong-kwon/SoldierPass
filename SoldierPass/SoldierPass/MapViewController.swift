@@ -8,8 +8,7 @@
 import UIKit
 import CoreLocation
 
-class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerDelegate {
-    
+class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerDelegate{
     @IBOutlet var subView: UIView!
     var mapView: MTMapView?
     

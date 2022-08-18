@@ -19,6 +19,7 @@
 		53BF8AA228AD05B10039D9AF /* cell_background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53BF8AA128AD05B10039D9AF /* cell_background.jpeg */; };
 		53BF8AA428AD16A90039D9AF /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8AA328AD16A90039D9AF /* FavoriteTableViewCell.swift */; };
 		53BF8AA628AD17990039D9AF /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8AA528AD17990039D9AF /* FavoriteTableViewController.swift */; };
+		53BF8AAC28AE7ACB0039D9AF /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF8AAB28AE7ACB0039D9AF /* MovieViewController.swift */; };
 		53C2D2872898E47A00294AED /* BenefitsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2862898E47A00294AED /* BenefitsDataController.swift */; };
 		C7930C4F28980FA000AF4DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C4E28980FA000AF4DFF /* AppDelegate.swift */; };
 		C7930C5128980FA000AF4DFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7930C5028980FA000AF4DFF /* SceneDelegate.swift */; };
@@ -61,6 +62,7 @@
 		53BF8AA128AD05B10039D9AF /* cell_background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cell_background.jpeg; sourceTree = "<group>"; };
 		53BF8AA328AD16A90039D9AF /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		53BF8AA528AD17990039D9AF /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		53BF8AAB28AE7ACB0039D9AF /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		53C2D2862898E47A00294AED /* BenefitsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsDataController.swift; sourceTree = "<group>"; };
 		C7930C4B28980FA000AF4DFF /* SoldierPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoldierPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7930C4E28980FA000AF4DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				53BF8A9228ABDD800039D9AF /* HomepageButton.swift */,
 				53BF8AA328AD16A90039D9AF /* FavoriteTableViewCell.swift */,
 				53BF8AA528AD17990039D9AF /* FavoriteTableViewController.swift */,
+				53BF8AAB28AE7ACB0039D9AF /* MovieViewController.swift */,
 			);
 			path = SoldierPass;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BF8AA628AD17990039D9AF /* FavoriteTableViewController.swift in Sources */,
+				53BF8AAC28AE7ACB0039D9AF /* MovieViewController.swift in Sources */,
 				C7EA888C28A97F6600D850F3 /* TabViewController.swift in Sources */,
 				53BF8AA428AD16A90039D9AF /* FavoriteTableViewCell.swift in Sources */,
 				C7930C5328980FA000AF4DFF /* ViewController.swift in Sources */,

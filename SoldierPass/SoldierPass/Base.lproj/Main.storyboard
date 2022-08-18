@@ -275,6 +275,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sl4-oh-9OS" customClass="HomepageButton" customModule="SoldierPass" customModuleProvider="target">
+                                <rect key="frame" x="16" y="369" width="186" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="현재 상영중인 영화 정보"/>
+                                <connections>
+                                    <segue destination="2Wd-Oj-1n9" kind="show" identifier="movieSegue" id="ZEh-Cy-WdF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Sn-YF-NQC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -282,6 +291,7 @@
                     <navigationItem key="navigationItem" id="HR3-Pf-XoH"/>
                     <connections>
                         <outlet property="addressIcon" destination="q4m-tS-65L" id="Psv-HB-m8x"/>
+                        <outlet property="btnMovie" destination="Sl4-oh-9OS" id="QTx-z9-eCc"/>
                         <outlet property="btnStar" destination="gkH-6h-JLE" id="XBC-Oo-v0x"/>
                         <outlet property="lbAddress" destination="7K1-Pk-5Rb" id="Agv-yJ-87R"/>
                         <outlet property="lbCallNumber" destination="7fO-ay-iRx" id="SJ9-JW-8Wy"/>
@@ -293,6 +303,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CbY-4F-K1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1944.6153846153845" y="-601.42180094786727"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="SEW-Nr-x2y">
+            <objects>
+                <viewController id="2Wd-Oj-1n9" customClass="MovieViewController" customModule="SoldierPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PdC-KH-Hav">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajY-mr-m4J">
+                                <rect key="frame" x="338" y="5" width="36" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title="">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnExitClick:" destination="2Wd-Oj-1n9" eventType="touchUpInside" id="63V-3W-xPs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ae9-93-NNd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ymr-Ye-XBq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5W-vw-R1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2787.6923076923076" y="-601.42180094786727"/>
         </scene>
         <!--즐겨찾기-->
         <scene sceneID="GXC-4M-zqu">

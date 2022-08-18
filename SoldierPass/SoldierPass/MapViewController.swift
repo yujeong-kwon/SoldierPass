@@ -52,13 +52,9 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
             guard let location = placemark?.first?.location else {
                 return print("데이터가 없습니다")
             }
-            print(location.coordinate.latitude)
-           
-            
             self.fun_createPin(itemName: name, getla: location.coordinate.latitude, getlo: location.coordinate.longitude, markerType: .redPin)
             
         }
-       
        
     }
     

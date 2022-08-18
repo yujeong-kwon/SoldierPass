@@ -31,11 +31,13 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
     var btnState:[Bool] = [false,false,false,false,false,false]
     var data:[[String]] = []
     let db = DBHelper.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         data = dataList
         showPicker.tintColor = .clear
+        tableView.rowHeight = 100
         createPickerView()
         dismissPickerView()
     }
@@ -50,9 +52,10 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
-        cell.textLabel?.text = data[indexPath.row][1]
-        cell.detailTextLabel?.text = data[indexPath.row][4]
-        
+        cell.lbTitleText?.text = data[indexPath.row][1]
+        cell.lbSubTitleText?.text = data[indexPath.row][4]
+        cell.lbSubTitleText.numberOfLines = 0
+
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

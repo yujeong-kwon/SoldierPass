@@ -1,15 +1,16 @@
 //
-//  MainTableViewCell.swift
+//  FavoriteTableViewCell.swift
 //  SoldierPass
 //
-//  Created by 방유빈 on 2022/08/06.
+//  Created by 방유빈 on 2022/08/17.
 //
 
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
-    @IBOutlet var lbTitleText: UILabel!
-    @IBOutlet var lbSubTitleText: UILabel!
+class FavoriteTableViewCell: UITableViewCell {
+    @IBOutlet var lbFavoriteTitleText: UILabel!
+    @IBOutlet var lbFavoriteSubTitleText: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

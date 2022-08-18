@@ -35,7 +35,7 @@ struct MovieData: Decodable{
     let showCnt: String
 }
 
-class MovieViewController: UIViewController {
+class MovieViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet var standardDate: UILabel!
     @IBOutlet var movieTableView: UITableView!
@@ -85,8 +85,7 @@ class MovieViewController: UIViewController {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return rnum
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

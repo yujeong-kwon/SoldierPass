@@ -12,6 +12,7 @@ var dataList:[[String]]=[]
 class BenefitsDataController{
     
     init(){
+        dataList=[]
         fun_loadDataFromCSV()
     }
     func fun_isEmpty()->Bool{
@@ -51,6 +52,7 @@ class BenefitsDataController{
         }catch{
             print("Error reading CSV file");
         }
+        print(dataList.count)
     }
     func fun_filterData(city:String,category:[Bool])->[[String]]{
         var data:[[String]]=[]

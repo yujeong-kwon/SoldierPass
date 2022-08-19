@@ -10,6 +10,7 @@ import UIKit
 class MovieTableViewCell: UITableViewCell {
 
     @IBOutlet var rank: UILabel!
+    
     @IBOutlet var movieName: UILabel!
     @IBOutlet var rankInten: UILabel!
     

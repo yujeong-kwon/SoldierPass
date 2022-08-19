@@ -35,22 +35,33 @@ struct MovieData: Decodable{
     let showCnt: String
 }
 
-class MovieViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
     @IBOutlet var standardDate: UILabel!
-    @IBOutlet var movieTableView: UITableView!
+    
+    
+    @IBOutlet var movieTV: UITableView!
     
     let key = "646e2c7f0a11dd7ff2d8ccbd89b085aa"
     var targetDate = "20220817"
     var dataStructure: BoxOffice?
     
-    var rank = ""
-    var movieName = ""
-    var rankInten = ""
     var rnum = 0
+    
+    var movieDataList:[[String]]=[]
+    var cnt = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        roadData()
+        print(self.movieDataList)
+        movieTV.delegate = self
+        movieTV.dataSource = self
         
+        // Do any additional setup after loading the view.
+    }
+    func roadData(){
         let baseURL = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/" +
         "boxoffice/searchDailyBoxOfficeList.json?key=\(key)&targetDt=\(targetDate)"
         
@@ -61,40 +72,45 @@ class MovieViewController: UIViewController, UITableViewDelegate,UITableViewData
                 print(error!)
                 return
             }
-            guard let resData = data else {return}
+            guard let resData = data else { return }
             do {
                 self.dataStructure = try JSONDecoder().decode(BoxOffice.self, from: resData)
-                DispatchQueue.main.async(execute: {
-                    if let list = self.dataStructure?.boxOfficeResult.dailyBoxOfficeList{
-                        for movie in list{
-                            self.rank = movie.rank
-                            self.movieName = movie.movieNm
-                            self.rankInten = movie.rankInten
-                            self.rnum = Int(movie.rnum)!
-                        }
+                
+                if let list = self.dataStructure?.boxOfficeResult.dailyBoxOfficeList{
+                    for movie in list{
+                        var data:[String] = []
+                        data.append(movie.rank)
+                        data.append(movie.movieNm)
+                        data.append(movie.rankInten)
+                        self.rnum = Int(movie.rnum)!
+                        self.movieDataList.append(data)
                     }
-                })
+                    
+                }
+                    
             }catch{
                 print("Data Parsing Error")
             }
-        }.resume()
-        // Do any additional setup after loading the view.
+        }
+        
     }
     //tableView
+    /*
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+     */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return movieDataList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as! MovieTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
         
-        cell.rank?.text = self.rank
-        cell.movieName?.text = self.movieName
-        cell.rankInten?.text = self.rankInten
-
+       // cell.rank.text = self.movieDataList[indexPath.row][0]
+        //cell.movieName.text = self.movieDataList[indexPath.row][1]
+        //cell.rankInten.text = self.movieDataList[indexPath.row][2]
+        
         return cell
     }
     

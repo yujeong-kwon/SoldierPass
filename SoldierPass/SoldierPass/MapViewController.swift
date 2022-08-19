@@ -16,7 +16,6 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
     
     var dataController:BenefitsDataController = BenefitsDataController()
     var data:[[String]]=[]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fun_mapDisplay()
@@ -55,7 +54,7 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
             self.fun_createPin(itemName: name, getla: location.coordinate.latitude, getlo: location.coordinate.longitude, markerType: .redPin)
             
         }
-       
+        
     }
     
     func fun_createPin(itemName:String, getla: Double, getlo: Double, markerType:MTMapPOIItemMarkerType){

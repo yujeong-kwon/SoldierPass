@@ -52,7 +52,6 @@ class BenefitsDataController{
         }catch{
             print("Error reading CSV file");
         }
-        print(dataList.count)
     }
     func fun_filterData(city:String,category:[Bool])->[[String]]{
         var data:[[String]]=[]
@@ -61,7 +60,7 @@ class BenefitsDataController{
         }
         else{
             for item in dataList{
-                if item[1] == city {
+                if item[2] == city {
                     data.append(item)
                 }
             }

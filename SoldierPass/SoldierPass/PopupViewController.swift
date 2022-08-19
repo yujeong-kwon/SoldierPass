@@ -16,7 +16,6 @@ class PopupViewController: UIViewController {
     @IBOutlet var lbCallNumber: UILabel!
     @IBOutlet var addressIcon: UILabel!
     @IBOutlet var lbAddress: UILabel!
-    @IBOutlet var btnMovie: HomepageButton!
     
     
     var index:Int?
@@ -28,12 +27,6 @@ class PopupViewController: UIViewController {
         super.viewDidLoad()
         self.lbContents.numberOfLines = 0
         
-        if dataList[index!][3] != "영화"{
-            btnMovie.layer.isHidden = true
-        }
-        else{
-            btnMovie.layer.isHidden = false
-        }
         favoriteList = db.fun_selectAll()
         // Do any additional setup after loading the view.
         fun_setbtnStar(state: favoriteList.contains(index!))

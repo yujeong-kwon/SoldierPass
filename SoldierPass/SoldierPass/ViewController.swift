@@ -40,7 +40,6 @@ class ViewController: UIViewController,UITextFieldDelegate, UIPickerViewDelegate
         tableView.rowHeight = 100
         createPickerView()
         dismissPickerView()
-        print(data)
     }
     
     //tableView

@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerDelegate{
+class MapViewController: UIViewController, MTMapViewDelegate{
     @IBOutlet var subView: UIView!
     var mapView: MTMapView?
     
@@ -16,6 +16,7 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
     
     var dataController:BenefitsDataController = BenefitsDataController()
     var data:[[String]]=[]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fun_mapDisplay()
@@ -24,6 +25,12 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
         for item in data{
            fun_adressToPoint(address: item[7], name: item[1])
         }
+        mapView?.setMapCenter(MTMapPoint(geoCoord:MTMapPointGeo(latitude:  37.456518177069526, longitude: 126.70531256589555)), zoomLevel: 5, animated: true)
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
         
     }
     
@@ -102,4 +109,26 @@ class MapViewController: UIViewController, MTMapViewDelegate, CLLocationManagerD
     }
     */
     
+}
+
+extension MapViewController: CLLocationManagerDelegate{
+    func getLocationUsagePermission(){
+        self.locationManager.requestWhenInUseAuthorization()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status{
+        case .authorizedAlways, .authorizedWhenInUse:
+            print("권한 설정됨")
+        case .restricted, .notDetermined:
+            print("설정되지 않음")
+            getLocationUsagePermission()
+        case .denied:
+            print("요청 거부됨")
+            getLocationUsagePermission()
+        default:
+            print("default")
+            self.fun_mapDisplay()
+        }
+    }
 }

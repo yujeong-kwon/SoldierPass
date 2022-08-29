@@ -83,12 +83,13 @@ class MapViewController: UIViewController, MTMapViewDelegate{
     }
     */
     
-    
+    /*
     func mapView(_ mapView: MTMapView!, touchedCalloutBalloonOf poiItem: MTMapPOIItem!) {
         //itemNAME으로 데이터에서 조회
         //-> 조회하고 팝업창 상세페이지
     }
-
+*/
+    
     /*
     func fun_mapMyLocation(){
         //현재 위치 가져오기
